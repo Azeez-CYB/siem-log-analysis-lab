@@ -1,16 +1,37 @@
-# siem-log-analysis-lab
-# SIEM Log Analysis Report
+# SIEM Log Analysis Lab (Elastic Stack)
 
-## Objective
-To analyse web traffic logs using Elastic SIEM and identify suspicious patterns that may indicate malicious activity.
+## Overview
+This project demonstrates a basic Security Operations Centre (SOC) workflow using the Elastic Stack. The lab focuses on log ingestion, investigation, visualisation, and incident reporting.
 
-## Tools Used
-- Elastic Stack (Elasticsearch, Kibana)
+## Objectives
+- Analyse web traffic logs using a SIEM
+- Identify suspicious patterns and high-volume source IPs
+- Build dashboards to visualise traffic trends
+- Document findings in a security incident report
+
+## Tools & Technologies
+- Elasticsearch
+- Kibana
 - Docker
 - Sample Web Logs
 
-## Investigation Summary
-Log analysis revealed repeated requests from specific source IP addresses. Visual analysis showed traffic spikes over short time periods, which may indicate automated scanning or suspicious behaviour.
+## Investigation Process
+- Logs were analysed using Kibana Discover
+- Fields such as source IP address and timestamps were reviewed
+- Visualisations were created to identify traffic spikes and repeated activity
+- A dashboard was built to summarise findings
 
-## Conclusion
-This project demonstrates basic SOC analyst skills including log analysis, pattern recognition, dashboard creation, and incident documentation.
+## Findings
+Analysis revealed repeated requests from specific IP addresses over short periods of time, which may indicate automated scanning or suspicious behaviour.
+
+## Screenshots
+See included screenshots demonstrating:
+- Log analysis in Discover
+- Source IP distribution
+- Traffic trends dashboard
+
+## Skills Demonstrated
+- SIEM log analysis
+- SOC investigation workflow
+- Dashboard creation
+- Incident documentation
